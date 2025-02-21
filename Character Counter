@@ -1,0 +1,17 @@
+// Character Counting
+
+function countBs (string) {
+    let amount = 0
+    for (let i = 0; i<string.length; i++) {if (string[i] === "B") {amount++}}
+    return amount
+}
+
+countBs("Bombastic") // 1
+
+function countChars (string, char) {
+    let amount = 0
+    for (let i = 0; i<string.length; i++) {if (string[i] in [char.toUpperCase(), char.toLowerCase()]) {amount++}}
+    return amount
+}
+
+countChars("ZEBRA STReeT", "e" ) // 3
