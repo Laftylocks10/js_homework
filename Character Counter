@@ -1,4 +1,4 @@
-// Character Counting
+// Character Counting. Both are Case Sensitive
 
 function countBs (string) {
     let amount = 0
@@ -10,7 +10,7 @@ countBs("Bombastic") // 1
 
 function countChars (string, char) {
     let amount = 0
-    for (let i = 0; i<string.length; i++) {if ([char.toUpperCase(), char.toLowerCase()].includes(string[i])) {amount++}}
+    for (let i = 0; i<string.length; i++) {if (string[i]===char) {amount++}}
     return amount
 }
 
