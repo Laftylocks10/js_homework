@@ -10,7 +10,6 @@ countBs("Bombastic") // 1
 
 function countChars (string, char) {
     let amount = 0
-    console.log(char.toUpperCase(), char.toLowerCase())
     for (let i = 0; i<string.length; i++) {if ([char.toUpperCase(), char.toLowerCase()].includes(string[i])) {amount++}}
     return amount
 }
